@@ -1,0 +1,32 @@
+:::: Log File ::::
+
+
+[6/9/2019 -- 18:25]  Info task started
+[6/9/2019 -- 18:27]  Scripts ran on main.js
+[6/9/2019 -- 18:29]  Scripts ran on main.js
+[6/9/2019 -- 18:29]  Scripts ran on main.js
+[6/9/2019 -- 18:33]  Scripts ran on main.js
+[6/9/2019 -- 18:35]  Scripts ran on main.js
+[6/9/2019 -- 18:36]  Scripts ran on main.js
+[6/9/2019 -- 18:39]  Scripts ran on main.js
+[6/9/2019 -- 18:43]  Sass ran on files
+[6/9/2019 -- 18:45]  Sass ran on files
+[6/9/2019 -- 18:46]  Scripts ran on main.js
+[6/9/2019 -- 18:46]  Sass ran on files
+[6/9/2019 -- 18:48]  Sass ran on files
+[6/9/2019 -- 18:48]  Sass ran on files
+[6/9/2019 -- 18:49]  Sass ran on files
+[6/9/2019 -- 18:52]  Sass ran on files
+[6/9/2019 -- 18:55]  Scripts ran on main.js
+[6/9/2019 -- 18:57]  Scripts ran on main.js
+[6/9/2019 -- 18:59]  Scripts ran on main.js
+[6/9/2019 -- 19:19]  Scripts ran on main.js
+[6/9/2019 -- 19:21]  Scripts ran on main.js
+[6/9/2019 -- 19:22]  Scripts ran on main.js
+[6/9/2019 -- 19:25]  Scripts ran on main.js
+[6/9/2019 -- 19:25]  Scripts ran on main.js
+[6/9/2019 -- 19:26]  Sass ran on files
+[6/9/2019 -- 19:26]  Sass ran on files
+[6/9/2019 -- 19:27]  Sass ran on files
+[6/9/2019 -- 19:27]  Scripts ran on main.js
+[6/9/2019 -- 19:28]  Sass ran on files
