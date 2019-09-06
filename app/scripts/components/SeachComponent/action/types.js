@@ -1,0 +1,1 @@
+export const GET_SEARCH_SUCCESS = 'GET_SEARCH_SUCCESS';
