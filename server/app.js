@@ -57,7 +57,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 
 app.get('/search', function (req, res) {
-  console.log(req.query.name);
     jsonfile.readFile(file)
         .then(obj => {
             obj = obj.data;

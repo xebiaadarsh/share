@@ -21,13 +21,11 @@ class Search extends React.Component {
   }
 
   handleOnChange(evt) {
-    console.log("e.target.value",evt.target.value)
     this.setState({searchText : evt.target.value});
     this.props.getSearchData(this.state.searchText);
   }
 
   render() {
-    console.log('this.props.value.data',this.state.searchResult);
     return (
       <div className="content">
         <div className="container">

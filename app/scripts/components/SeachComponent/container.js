@@ -3,7 +3,6 @@ import { searchAction } from './action';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
-    console.log("state in mapstatetoprops", state)
     return { 
         value : state
     }
