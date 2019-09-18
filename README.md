@@ -1,108 +1,68 @@
-# ELC Coding Test
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The ELC Coding Test is a way for you to showcase your own approach to coding. It allows you to create something with your own style and preferences. You can change the code to match your own preferences however you like. Feel free to change the setup, code or approach however you like. PLEASE READ ALL INSTRUCTIONS BELOW BEFORE STARTING.
+## Available Scripts
 
-### The Task
+In the project directory, you can run:
 
-You are required to create a simple auto-search feature similar to [this one](https://www.maccosmetics.com/) where-by, as you type, the data is checked against a Node server and the response is then loaded in with React. You can style this however you wish and can implement it however you wish but you MUST use React and Node to accomplish this. This has already been setup for you in the source code provided. Some general tips on starting:
+### `npm start`
 
-* The point of entry for the app can be found in the 'app/scripts/main.js' file -- work from this file for your React app code
-* The server with the response can be found in the 'server/app.js' file -- work from this file to complete the Node server setup
-* The data can be found in the 'server/data.js' file, which is then loaded into the Node 'server/app.js' file 
-* The SCSS files, which contain the SASS styling, can be found in the 'app/sass' folder
-* You can alter the setup of the runtime by editing the 'gulpfile.js' file
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Getting Started
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-### Prerequisites
+### `npm test`
 
-* NodeJS (v10.15.3)
-* NPM (v6.9.0)
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Step 1 - Node Modules
+### `npm run build`
 
-The first thing you need to do to get this app working is to install the Node modules with the following command:
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-    npm install
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-### Step 2 - Running the App
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-After installing the Node modules, you must start two locally hosted servers. The first server is the Node back end server, which runs the NodeJS files found in the './server' folder, and the second is the front end server, which runs the ReactJS app files found in the './app' folder. Both servers can be started by running the following command (make sure you’re using the correct versions of Node and NPM per the prerequisites above):
+### `npm run eject`
 
-    npm run servers
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-This command will create a front end server at http://localhost:3030 (which should automatically open in your browser), and it will start the Node back end server at http://localhost:3035, with Nodemon, so that updates happen automatically on save. 
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-*Special Note for Windows Users*
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-On Windows systems, you may get an error like the following:
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-  'NODE_ENV' is not recognized as an internal or external command, operable program or batch file.
-  
-If so, you will need to replace any occurrences of NODE_ENV with 'SET NODE_ENV' in the package.json, and separate this command from the one that follows it with a '&', like this:
-  "node-server": "SET NODE_ENV=development & nodemon server/app.js"
-  
-## Front End App Folder
+## Learn More
 
-All of the front end source code can be found in the './app' folder. A description of each subfolder is as follows:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### images
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Here you can (optionally)  place images that can be processed with the npm command:
+### Code Splitting
 
-    npm run image-min
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-This will minify the images and put them into the '.local_server/img/' folder.
+### Analyzing the Bundle Size
 
-### sass
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-Here you will find the SCSS files, we use Sass on the project to compile down to CSS. These files will be automatically compiled upon save when you are running the standard 'npm run dev-server' command. However you can compile this yourself by running this command:
+### Making a Progressive Web App
 
-    npm run sass
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### scripts
+### Advanced Configuration
 
-All of the Javascript can be found in here. The App uses React so all of these files are written with React JSX and compiled via Webpack. The Webpack setup can be found in the 'config/webpack.config.js' file. These files are ran with the '[@babel/preset-env](https://github.com/babel/babel/tree/master/packages/babel-preset-env)' and '[@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react)' loaders, which will enable you to write ES2017 and React Code.
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-The code is all initialized from the 'app/scripts/main.js' file, so that should be your initial point of call for the App.
+### Deployment
 
-### third_party
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-Third party can be used to contain any third party libraries that you may want to use with your app. You can call a command to move all the third party items with:
+### `npm run build` fails to minify
 
-    npm run third-party
-
-### views
-
-The views folder contains the HTML templates folder. The templates are created with the [Mustache](https://mustache.github.io/) templating language.
-
-
-## Node Back End Server Folder
-
-### app.js
-
-The source code for the back end server can be found in the './server' folder, specifically in the app.js file.  The app.js file includes starter code for you to create your own HTTP server, which will listen on port 3035 and create a data response, loading the product data from the data.js file, in JSON format. In addition to the comments in the app.js file, review the [NodeJS http.serverResponse documentation](https://nodejs.org/api/http.html#http_class_http_serverresponse).
-
-To start the server on its own you can run this command:
-
-    npm run node-server
-
-### data.js
-
-The data in the data.js file uses the following JSON Schema:
-
-    {
-        "_id": "001", // A Number for the product
-        "isActive": "false", // Is the product actively in stock
-        "price": "23.00", // The price of the product in the set currency
-        "picture": "/img/products/N16501_430.png", // The location of the image for the product
-        "name": "Damage Reverse Thickening Conditioner", // The products name
-        "about": "Description for the product...", // Description of the product
-        "tags": [ "ojon", "conditioner" ] // The tags for the product
-    }
-
-## Additional Submission Guidelines
-
-* Please DELETE the node_modules folder prior to sending your code for review
-* Don't forget to include CSS/SCSS styling
-* If any additional commands  are necessary to run your code, please make sure this is documented
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
